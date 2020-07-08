@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { Component } from "react";
-import { apiUrl } from "../../config/config";
 
 // reactstrap components
 import {

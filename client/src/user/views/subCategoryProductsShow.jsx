@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import ProductComponent from "../components/product/product";
 import Breadcrumbs from "../widgets/Breadcrumbs/breadcrumbs";
-import { apiUrl } from "../../config/config";
 
 class SubCategoryProductsShow extends Component {
   // console.log(props.match.params);

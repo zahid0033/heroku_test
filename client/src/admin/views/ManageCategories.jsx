@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import { Row, Col, Card, CardHeader, CardTitle, CardBody } from "reactstrap";
 import PanelHeader from "../components/PanelHeader/PanelHeader";
 import axios from "axios";
-import { apiUrl } from "../../config/config";
 
 class ManageCategories extends Component {
   state = {

@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import axios from "axios";
-import { apiUrl } from "../../config/config";
+
 import ProductComponent from "../components/product/product";
 import SearchSupplierList from "../components/Supplier/searchSupplierList";
 import Breadcrumbs from "../widgets/Breadcrumbs/breadcrumbs";

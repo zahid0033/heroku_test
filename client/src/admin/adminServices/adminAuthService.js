@@ -1,7 +1,6 @@
 /** @format */
 
 import axios from "axios";
-import { apiUrl } from "../../config/config";
 
 class AdminAuthService {
   AdminSignin(dataPost) {

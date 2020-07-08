@@ -40,7 +40,7 @@ import PanelHeader from "../components/PanelHeader/PanelHeader.jsx";
 import axios from "axios";
 import { tbody } from "../variables/general";
 import { Link } from "react-router-dom";
-import { apiUrl } from "../../config/config";
+
 import authHeader from "../adminServices/authHeader";
 
 class ViewSupplierDetails extends Component {
