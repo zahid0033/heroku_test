@@ -125,7 +125,7 @@ class ViewSupplierDetails extends Component {
   sendSave = async () => {
     await axios
       .post(
-        `${apiUrl}/supplier/statusUpdate`,
+        `/api/supplier/statusUpdate`,
         { status: this.state.status, id: this.state.supplier.id },
         { headers: { "x-access-token": authHeader() } }
       )
