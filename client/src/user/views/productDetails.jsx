@@ -58,7 +58,7 @@ class ProductDetails extends Component {
     await this.setState({
       zoomProperty: {
         ...this.state.zoomProperty,
-        img: `${frontendUrl}/images/products/${path}`,
+        img: ` /images/products/${path}`,
       },
     });
   };
@@ -86,12 +86,10 @@ class ProductDetails extends Component {
         <div className='item col-md-3' key={key}>
           <span
             className='product_gallery_item active'
-            onClick={() =>
-              this.zoomImageHandler(`${frontendUrl}/images/products/${path}`)
-            }>
+            onClick={() => this.zoomImageHandler(` /images/products/${path}`)}>
             <img
               style={{ width: "60px", height: "60px" }}
-              src={`${frontendUrl}/images/products/${path}`}
+              src={` /images/products/${path}`}
               alt=''
             />
           </span>

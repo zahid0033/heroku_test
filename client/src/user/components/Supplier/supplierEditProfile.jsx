@@ -47,7 +47,7 @@ class SupplierEditProfile extends Component {
       return (
         <img
           style={{ width: "50px", height: "50px" }}
-          src={`${frontendUrl}/images/supplier/${path}`}
+          src={` /images/supplier/${path}`}
           alt=''
         />
       );

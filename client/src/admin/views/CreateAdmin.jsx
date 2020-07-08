@@ -91,7 +91,7 @@ class CreateAdmin extends Component {
       return (
         <img
           style={{ width: "50px", height: "50px" }}
-          src={`${frontendUrl}/images/admin/${path}`}
+          src={` /images/admin/${path}`}
           alt=''
         />
       );

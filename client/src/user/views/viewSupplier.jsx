@@ -85,7 +85,7 @@ class ViewSupplier extends Component {
       return (
         <img
           className='circle_image'
-          src={`${frontendUrl}/images/supplier/${path}`}
+          src={` /images/supplier/${path}`}
           alt=''
         />
       );

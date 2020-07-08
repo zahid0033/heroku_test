@@ -115,7 +115,7 @@ class SupplierProduct extends Component {
                     // href="shop-product-detail.html"
                     to={`/productDetails/${product.id}`}>
                     <img
-                      src={`${frontendUrl}/images/products/${path}`}
+                      src={` /images/products/${path}`}
                       alt={product.name}
                       style={{ width: "100%", height: "170px" }}
                     />

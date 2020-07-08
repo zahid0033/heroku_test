@@ -100,7 +100,7 @@ class SupplierEmployee extends Component {
                   <div className='col-md-4'>
                     <img
                       className='circle_image'
-                      src={`${frontendUrl}/images/employee/${path}`}
+                      src={` /images/employee/${path}`}
                       alt=''
                     />
                   </div>

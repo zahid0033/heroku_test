@@ -66,7 +66,7 @@ class SupplierAddorEditEmployee extends Component {
       return (
         <img
           style={{ width: "50px", height: "50px" }}
-          src={`${frontendUrl}/images/employee/${path}`}
+          src={` /images/employee/${path}`}
           alt=''
         />
       );

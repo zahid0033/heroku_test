@@ -33,7 +33,7 @@ class Banner extends Component {
             <div className='carousel-item active background_bg'>
               <img
                 style={{ width: "100%", height: "600px" }}
-                src={`${frontendUrl}/images/banner/${path}`}
+                src={` /images/banner/${path}`}
                 alt=''
               />
               <div className='banner_slide_content'>

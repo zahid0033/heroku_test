@@ -100,7 +100,7 @@ class ManageBanners extends Component {
             <td>
               <img
                 style={{ width: "50px", height: "50px" }}
-                src={`${frontendUrl}/images/banner/${path}`}
+                src={` /images/banner/${path}`}
                 alt=''
               />
             </td>
