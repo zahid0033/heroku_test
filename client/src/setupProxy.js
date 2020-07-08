@@ -11,7 +11,7 @@ module.exports = function (app) {
   );
 
   app.use(
-    "/image/*",
+    "/images/*",
     createProxyMiddleware({
       target: "http://localhost:8000",
       changeOrigin: true,
