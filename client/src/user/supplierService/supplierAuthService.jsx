@@ -1,36 +1,35 @@
-import axios from 'axios';
-import {apiUrl} from "../../config/config";
+/** @format */
+
+import axios from "axios";
 
 class SupplierAuthService {
-    supplierSignup (dataPost) {
-        return axios.post(`${apiUrl}/supplier/signup`,dataPost)
-            .then(response => {
-                if (response.data.accessToken) {
-                    localStorage.setItem("supplier", JSON.stringify(response.data));
-                }
+  supplierSignup(dataPost) {
+    return axios.post(`/api/supplier/signup`, dataPost).then((response) => {
+      if (response.data.accessToken) {
+        localStorage.setItem("supplier", JSON.stringify(response.data));
+      }
 
-                return response.data;
-            });
-    }
+      return response.data;
+    });
+  }
 
-    supplierSignin (dataPost) {
-        return axios.post(`${apiUrl}/supplier/signin`,dataPost)
-            .then(response => {
-                if (response.data.accessToken) {
-                    localStorage.setItem("supplier", JSON.stringify(response.data));
-                }
+  supplierSignin(dataPost) {
+    return axios.post(`/api/supplier/signin`, dataPost).then((response) => {
+      if (response.data.accessToken) {
+        localStorage.setItem("supplier", JSON.stringify(response.data));
+      }
 
-                return response.data;
-            });
-    }
+      return response.data;
+    });
+  }
 
-    logout(){
-        localStorage.removeItem("supplier");
-    }
+  logout() {
+    localStorage.removeItem("supplier");
+  }
 
-    getCurrentSupplier() {
-        return JSON.parse(localStorage.getItem('supplier'));
-    }
+  getCurrentSupplier() {
+    return JSON.parse(localStorage.getItem("supplier"));
+  }
 }
 
 export default new SupplierAuthService();
