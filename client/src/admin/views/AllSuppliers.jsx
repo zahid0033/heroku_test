@@ -28,9 +28,13 @@ class AllSuppliers extends Component {
         supplierList : []
     };
 
-    componentDidMount() {
+    componentDidMount = async () => {
+        const script = document.createElement("script");
+        script.src = "/js/custom.js";
+        script.async = true;
+        await document.body.appendChild(script);
         this.loadSuppliers();
-    }
+    };
 
     loadSuppliers = async () => {
         await axios.get(`${apiUrl}/supplier`)
@@ -146,7 +150,7 @@ class AllSuppliers extends Component {
                                         <CardTitle tag="h4">All Suppliers</CardTitle>
                                     </CardHeader>
                                     <CardBody>
-                                        <Table responsive>
+                                        <Table responsive id="example">
                                             <thead>
                                             <tr>
                                                 <th scope="col">#</th>

@@ -56,7 +56,7 @@ class ViewSupplierDetails extends Component {
     }
 
     loadSupplier = async (id) => {
-        await axios.get(`http://localhost:8000/supplier/get/${id}`)
+        await axios.get(`${apiUrl}/supplier/get/${id}`)
             .then(response => {
                 if (response.data.success){
                     // console.log(response.data.output)
